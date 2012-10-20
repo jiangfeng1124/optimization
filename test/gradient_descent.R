@@ -1,6 +1,6 @@
 source("src/gradient_descent.R")
 
-## example: 1-dimensional
+cat(">>> example: 1-dimensional\n")
 f1 <- function(x) {
 	return((x[1] - 5.0)^2)
 }
@@ -16,7 +16,7 @@ results <- GradientDescent(f1, g1, initial.x, show.trace = FALSE)
 #print(paste("minimum.f: ", results$optim.f))
 print(results)
 
-## example: 2-dimensional
+cat(">>> example: 2-dimensional\n")
 eta = 0.9
 
 f2 <- function(x) {
