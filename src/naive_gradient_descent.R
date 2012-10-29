@@ -1,3 +1,5 @@
+source("src/backtracking_line_search.R")
+
 NaiveGradientDescent <- function(f, g, initial.x, step.size = 0.1, tolrence = 10e-8, max.iterations = 1000, show.trace = TRUE)
 {
 	x.old <- initial.x
